@@ -233,6 +233,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D0077692206505B00EEDB17 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2D314CA22159711A00B74FBA /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
 		2D30C89E2195E2BF000BD1DA /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,7 +280,7 @@
 				2D254F50218DF01500B6C42F /* GoogleService-Info.plist */,
 				2D314C9E2159711A00B74FBA /* AppDelegate.swift */,
 				2D314CAA2159711B00B74FBA /* LaunchScreen.storyboard */,
-				2D314CA22159711A00B74FBA /* Main.storyboard */,
+				2D0077692206505B00EEDB17 /* storyboards */,
 				2D314CCF2159734B00B74FBA /* global */,
 				2D8659412159746C003A5B67 /* app_flow */,
 			);
@@ -311,8 +319,7 @@
 				2D86593D2159743B003A5B67 /* views */,
 				2DEE2901216D29630007A239 /* variables */,
 			);
-			name = global;
-			path = "New Group";
+			path = global;
 			sourceTree = "<group>";
 		};
 		2D3E6644216E459400CD96FC /* header */ = {
