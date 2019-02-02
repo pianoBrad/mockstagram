@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="atf-QH-xmU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Gfs-2a-ABU">
+            <objects>
+                <navigationController id="atf-QH-xmU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icon_home" selectedImage="icon_active_home" id="sXI-fP-fDl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aJm-UZ-shV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vx4-ek-be9" kind="relationship" relationship="rootViewController" id="GzH-zh-Fdj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcl-hO-dKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="-943"/>
+        </scene>
+        <!--MainFeed-->
+        <scene sceneID="qIZ-SB-4gI">
+            <objects>
+                <viewController title="MainFeed" id="Vx4-ek-be9" customClass="MainFeedVC" customModule="mockstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZH4-hk-08x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ini-xV-mT4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yWH-l6-qyw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yWH-l6-qyw" firstAttribute="leading" secondItem="Ini-xV-mT4" secondAttribute="leading" id="B3f-18-oaJ"/>
+                                    <constraint firstItem="yWH-l6-qyw" firstAttribute="height" secondItem="Ini-xV-mT4" secondAttribute="height" priority="250" id="Eem-iu-JCB"/>
+                                    <constraint firstItem="yWH-l6-qyw" firstAttribute="top" secondItem="Ini-xV-mT4" secondAttribute="top" id="QvB-D7-Ti4"/>
+                                    <constraint firstAttribute="bottom" secondItem="yWH-l6-qyw" secondAttribute="bottom" id="Vcq-Hp-tvh"/>
+                                    <constraint firstAttribute="trailing" secondItem="yWH-l6-qyw" secondAttribute="trailing" id="aTe-tk-1DK"/>
+                                    <constraint firstItem="yWH-l6-qyw" firstAttribute="centerX" secondItem="Ini-xV-mT4" secondAttribute="centerX" id="lmf-Oi-iUK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ini-xV-mT4" firstAttribute="trailing" secondItem="vJ7-s9-9Rh" secondAttribute="trailing" id="Gmx-1j-rOu"/>
+                            <constraint firstItem="Ini-xV-mT4" firstAttribute="leading" secondItem="vJ7-s9-9Rh" secondAttribute="leading" id="kmk-B7-hLe"/>
+                            <constraint firstItem="Ini-xV-mT4" firstAttribute="top" secondItem="vJ7-s9-9Rh" secondAttribute="top" id="utX-NN-CqA"/>
+                            <constraint firstItem="Ini-xV-mT4" firstAttribute="bottom" secondItem="vJ7-s9-9Rh" secondAttribute="bottom" id="wdB-Tk-g3U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vJ7-s9-9Rh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icon_home" selectedImage="icon_active_home" id="uIL-PF-YaA"/>
+                    <navigationItem key="navigationItem" title="Mockstagram" id="Z7r-JH-efz"/>
+                    <connections>
+                        <outlet property="contentFeed" destination="yWH-l6-qyw" id="ZGp-Tj-9cx"/>
+                        <outlet property="contentScrollView" destination="Ini-xV-mT4" id="pGU-sj-wcf"/>
+                        <segue destination="d6O-ab-J4K" kind="show" identifier="commentsSegue" id="5Hq-Wo-8bJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdE-qp-ZAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="-943"/>
+        </scene>
+        <!--Comments-->
+        <scene sceneID="MK9-z3-Swi">
+            <objects>
+                <viewController title="Comments" hidesBottomBarWhenPushed="YES" id="d6O-ab-J4K" customClass="CommentsListVC" customModule="mockstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Jo-wU-YiO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZo-xb-6ii">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gZo-xb-6ii" firstAttribute="trailing" secondItem="NMb-Bb-f9h" secondAttribute="trailing" id="Ifl-gT-egl"/>
+                            <constraint firstAttribute="bottom" secondItem="gZo-xb-6ii" secondAttribute="bottom" id="m37-S9-Vgb"/>
+                            <constraint firstItem="gZo-xb-6ii" firstAttribute="leading" secondItem="NMb-Bb-f9h" secondAttribute="leading" id="mEy-WP-5zR"/>
+                            <constraint firstItem="gZo-xb-6ii" firstAttribute="top" secondItem="NMb-Bb-f9h" secondAttribute="top" id="tXV-2s-jG6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NMb-Bb-f9h"/>
+                    </view>
+                    <connections>
+                        <outlet property="commentsScrollView" destination="gZo-xb-6ii" id="SxR-z5-Lyx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtI-1R-2kB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="-943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_active_home" width="50" height="53"/>
+        <image name="icon_home" width="50" height="53"/>
+    </resources>
+</document>

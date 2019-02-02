@@ -68,6 +68,11 @@
 		2DDC94EC2178200C002C6B5B /* StandardFormFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DDC94EB2178200C002C6B5B /* StandardFormFieldView.xib */; };
 		2DDC94EF21782065002C6B5B /* StandardFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC94EE21782065002C6B5B /* StandardFormFieldView.swift */; };
 		2DDC94F12178DDA7002C6B5B /* StandardFormSectionBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC94F02178DDA7002C6B5B /* StandardFormSectionBtn.swift */; };
+		2DE1425D220658260010DF1E /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE1425C220658260010DF1E /* HomeTab.storyboard */; };
+		2DE1425F22065A090010DF1E /* SearchTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE1425E22065A090010DF1E /* SearchTab.storyboard */; };
+		2DE1426122065B0A0010DF1E /* PlusTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE1426022065B0A0010DF1E /* PlusTab.storyboard */; };
+		2DE1426322065B2C0010DF1E /* HeartTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE1426222065B2C0010DF1E /* HeartTab.storyboard */; };
+		2DE1426622065C7D0010DF1E /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE1426522065C7D0010DF1E /* ProfileTab.storyboard */; };
 		2DE70068217E782F00EEE624 /* HamburgerMenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE70067217E782F00EEE624 /* HamburgerMenuItemView.swift */; };
 		2DE7006A217E8A0700EEE624 /* ProfileMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE70069217E8A0700EEE624 /* ProfileMenuVC.swift */; };
 		2DE972A6218FBB820002ED45 /* DataGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE972A5218FBB820002ED45 /* DataGlobals.swift */; };
@@ -176,6 +181,11 @@
 		2DDC94EB2178200C002C6B5B /* StandardFormFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardFormFieldView.xib; sourceTree = "<group>"; };
 		2DDC94EE21782065002C6B5B /* StandardFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardFormFieldView.swift; sourceTree = "<group>"; };
 		2DDC94F02178DDA7002C6B5B /* StandardFormSectionBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardFormSectionBtn.swift; sourceTree = "<group>"; };
+		2DE1425C220658260010DF1E /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		2DE1425E22065A090010DF1E /* SearchTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchTab.storyboard; sourceTree = "<group>"; };
+		2DE1426022065B0A0010DF1E /* PlusTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlusTab.storyboard; sourceTree = "<group>"; };
+		2DE1426222065B2C0010DF1E /* HeartTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeartTab.storyboard; sourceTree = "<group>"; };
+		2DE1426522065C7D0010DF1E /* ProfileTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
 		2DE70067217E782F00EEE624 /* HamburgerMenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerMenuItemView.swift; sourceTree = "<group>"; };
 		2DE70069217E8A0700EEE624 /* ProfileMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuVC.swift; sourceTree = "<group>"; };
 		2DE972A5218FBB820002ED45 /* DataGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGlobals.swift; sourceTree = "<group>"; };
@@ -236,6 +246,12 @@
 		2D0077692206505B00EEDB17 /* storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				2DE1426522065C7D0010DF1E /* ProfileTab.storyboard */,
+				2D314CAA2159711B00B74FBA /* LaunchScreen.storyboard */,
+				2DE1426222065B2C0010DF1E /* HeartTab.storyboard */,
+				2DE1426022065B0A0010DF1E /* PlusTab.storyboard */,
+				2DE1425E22065A090010DF1E /* SearchTab.storyboard */,
+				2DE1425C220658260010DF1E /* HomeTab.storyboard */,
 				2D314CA22159711A00B74FBA /* Main.storyboard */,
 			);
 			path = storyboards;
@@ -279,7 +295,6 @@
 				2D314CAD2159711B00B74FBA /* Info.plist */,
 				2D254F50218DF01500B6C42F /* GoogleService-Info.plist */,
 				2D314C9E2159711A00B74FBA /* AppDelegate.swift */,
-				2D314CAA2159711B00B74FBA /* LaunchScreen.storyboard */,
 				2D0077692206505B00EEDB17 /* storyboards */,
 				2D314CCF2159734B00B74FBA /* global */,
 				2D8659412159746C003A5B67 /* app_flow */,
@@ -689,13 +704,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE1426622065C7D0010DF1E /* ProfileTab.storyboard in Resources */,
 				2DEE28F3216CF8E90007A239 /* Lato-Italic.ttf in Resources */,
 				2DEE28F8216CF8E90007A239 /* Lato-LightItalic.ttf in Resources */,
 				2D254F51218DF01500B6C42F /* GoogleService-Info.plist in Resources */,
+				2DE1426322065B2C0010DF1E /* HeartTab.storyboard in Resources */,
+				2DE1425D220658260010DF1E /* HomeTab.storyboard in Resources */,
 				2DDC94E62177C99F002C6B5B /* ProfileEditView.xib in Resources */,
 				2DEE28F1216CF8E90007A239 /* Lato-BlackItalic.ttf in Resources */,
 				2DEE28F4216CF8E90007A239 /* Lato-Hairline.ttf in Resources */,
 				2D4C4882217B891400A29019 /* BizToolsSlideOne.xib in Resources */,
+				2DE1425F22065A090010DF1E /* SearchTab.storyboard in Resources */,
 				2DEE28F0216CF8E90007A239 /* Lato-Black.ttf in Resources */,
 				2DEE28F7216CF8E90007A239 /* Lato-HairlineItalic.ttf in Resources */,
 				2D12590F2177704400691077 /* ProfileContactView.xib in Resources */,
@@ -707,6 +726,7 @@
 				2DEE28EF216CF8E90007A239 /* Lato-Light.ttf in Resources */,
 				2D314CA92159711B00B74FBA /* Assets.xcassets in Resources */,
 				2DEE28F2216CF8E90007A239 /* Lato-Bold.ttf in Resources */,
+				2DE1426122065B0A0010DF1E /* PlusTab.storyboard in Resources */,
 				2D314CA42159711A00B74FBA /* Main.storyboard in Resources */,
 				2DEE28F6216CF8E90007A239 /* Lato-BoldItalic.ttf in Resources */,
 				2D3E6641216E3CD100CD96FC /* ProfileHeaderStatsView.xib in Resources */,
