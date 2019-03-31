@@ -29,7 +29,8 @@ class MainFeedVC: UIViewController
     func loadPosts()
     {
         let db = Firestore.firestore()
-        db.collection(remoteData.posts).getDocuments() {
+        db.collection(remoteData.posts).getDocuments()
+        {
             (querySnapshot, err) in
             if let err = err
             {

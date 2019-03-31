@@ -90,6 +90,8 @@
 		2DEE2900216D295C0007A239 /* ThemeGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE28FF216D295C0007A239 /* ThemeGlobals.swift */; };
 		2DEE2903216D29CD0007A239 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE2902216D29CD0007A239 /* UIColorExtensions.swift */; };
 		2DF206782170E93A008A6A6A /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF206772170E93A008A6A6A /* UIStackViewExtensions.swift */; };
+		2DF9A54722505AA5008C4F3C /* HeartTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF9A54622505AA5008C4F3C /* HeartTabVC.swift */; };
+		2DF9A54A22505C6A008C4F3C /* HeartTabSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF9A54922505C6A008C4F3C /* HeartTabSegmentedControl.swift */; };
 		2DFF5D5C2190F99C001A71C4 /* MediaCardFooterIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFF5D5B2190F99C001A71C4 /* MediaCardFooterIcon.swift */; };
 		69EAC91C875E9CD0B0C9576C /* Pods_mockstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB3C7D952E9184FCDACCBF4 /* Pods_mockstagramTests.framework */; };
 		7EE69E0172AD73B65220FC93 /* Pods_mockstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41583CCF2853BB96D1EEAD2B /* Pods_mockstagramUITests.framework */; };
@@ -203,6 +205,8 @@
 		2DEE28FF216D295C0007A239 /* ThemeGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeGlobals.swift; sourceTree = "<group>"; };
 		2DEE2902216D29CD0007A239 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		2DF206772170E93A008A6A6A /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
+		2DF9A54622505AA5008C4F3C /* HeartTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTabVC.swift; sourceTree = "<group>"; };
+		2DF9A54922505C6A008C4F3C /* HeartTabSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTabSegmentedControl.swift; sourceTree = "<group>"; };
 		2DFF5D5B2190F99C001A71C4 /* MediaCardFooterIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCardFooterIcon.swift; sourceTree = "<group>"; };
 		41583CCF2853BB96D1EEAD2B /* Pods_mockstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mockstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		487BB71DC302775A0AD855C8 /* Pods-mockstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mockstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mockstagramTests/Pods-mockstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -413,6 +417,7 @@
 				2D4569FE217D5D9000C91E40 /* MasterContainerVC.swift */,
 				2D456A00217D79D700C91E40 /* MainTabBC.swift */,
 				2D865944215983F6003A5B67 /* feed */,
+				2DF9A54822505AAE008C4F3C /* heart */,
 				2DEE28FE216D07A10007A239 /* profile */,
 			);
 			path = app_flow;
@@ -561,6 +566,15 @@
 				2DE972A5218FBB820002ED45 /* DataGlobals.swift */,
 			);
 			path = variables;
+			sourceTree = "<group>";
+		};
+		2DF9A54822505AAE008C4F3C /* heart */ = {
+			isa = PBXGroup;
+			children = (
+				2DF9A54922505C6A008C4F3C /* HeartTabSegmentedControl.swift */,
+				2DF9A54622505AA5008C4F3C /* HeartTabVC.swift */,
+			);
+			path = heart;
 			sourceTree = "<group>";
 		};
 		2DFF5D5A2190F96A001A71C4 /* media_card */ = {
@@ -900,12 +914,14 @@
 				2DE70068217E782F00EEE624 /* HamburgerMenuItemView.swift in Sources */,
 				2D4C4880217B889600A29019 /* BizToolsSlider.swift in Sources */,
 				2D4569FF217D5D9000C91E40 /* MasterContainerVC.swift in Sources */,
+				2DF9A54A22505C6A008C4F3C /* HeartTabSegmentedControl.swift in Sources */,
 				2DCBB7AA2184F3B50025DBCD /* ProfileOptionsTVC.swift in Sources */,
 				2D090DCF218F761500086A7A /* DecodableExtensions.swift in Sources */,
 				2DAEAEE5218E1DD50037D971 /* User.swift in Sources */,
 				2DDC94F12178DDA7002C6B5B /* StandardFormSectionBtn.swift in Sources */,
 				2DC1A38B2174252F004833DD /* ProfileFollowersListView.swift in Sources */,
 				2DC1A3842173911D004833DD /* ProfileHeaderView.swift in Sources */,
+				2DF9A54722505AA5008C4F3C /* HeartTabVC.swift in Sources */,
 				2D23B94221974F310091B428 /* NSMutableAttributedStringExtensions.swift in Sources */,
 				2DAEAEE9218E213E0037D971 /* Post.swift in Sources */,
 				2DEE2903216D29CD0007A239 /* UIColorExtensions.swift in Sources */,
